@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scransition Demo</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script src="../jquery.scransition.js"></script>
+<script>
+jQuery(document).ready(function($){
+	$('h2').scransition();
+	$('img').scransition({ transition:'0.4s', offset:150 });
+});
+</script>
+<style>
+body {
+	font: 16px/1.6 "Helvetica", "Arial", sans-serif;
+	background: #eee;
+}
+.container {
+	max-width: 640px;
+	margin: 0 auto;
+}
+
+/* set up transition styles here */
+img.scransition {
+	padding-top: 15px;
+	opacity: 0;
+}
+
+h2.scransition {
+	padding-left: 100px;
+	opacity: 0;
+}
+</style>
+
+</head>
+<body>
+	<div class="container">
+		<h1>Scransition Demo</h1>
+		<p>The javascript adds the class 'scransition' to the elements you've specified. When the element appears on screen, the class is removed and any css associated with the class will be animated away with it. In this way, you can easily animate any CSS parameter which can be animated. This plugin requires CSS transition (or -webkit-transition) support in order for the transition to work. Currently, global support for these features is quite good. <a href="caniuse.com/#search=transition">Check CanIUse.com</a> to see if your targeted browsers currently have support.</p>
+
+		<p>Here&rsquo;s some dummy content to make sure that the page is long enough to scroll.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nunc turpis, vehicula ac massa eu, adipiscing iaculis dolor. Nunc sagittis tellus at nunc consequat, vitae vehicula lectus pulvinar. Donec nec massa ipsum. Sed erat arcu, aliquet at ante sed, sagittis vulputate enim. Nulla tincidunt eros nunc. Fusce sit amet risus vel mi porta ornare. Mauris tempus tempus pharetra. Suspendisse vel lorem ut odio eleifend sagittis eu ut arcu. </p>
+		
+		<p>Ut bibendum, augue ut pharetra rutrum, metus nisi dictum nisi, tincidunt auctor ante nisl at felis. Duis ac nibh vel elit volutpat lacinia. Etiam vulputate tellus sit amet dignissim dapibus. Quisque adipiscing vehicula orci sit amet sollicitudin. Quisque sit amet massa nec nisi adipiscing congue elementum et ligula. Donec euismod suscipit libero. Nam pellentesque ullamcorper erat. Nunc quis ante eget dui lacinia sagittis ut sed nisl. Aliquam egestas libero at ipsum tristique mollis. Ut non tincidunt libero. Pellentesque in enim ipsum. </p>
+		
+		<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. In hac habitasse platea dictumst. Phasellus vulputate neque nec varius elementum. Phasellus faucibus laoreet mattis. Sed eu libero dignissim, volutpat felis eget, condimentum velit. Praesent ut consequat mauris. Phasellus sit amet odio varius magna viverra mollis et ut mauris. Nullam non ipsum ut nulla hendrerit blandit in id nibh. Donec commodo metus a commodo ultricies. Vestibulum ornare lacus felis, id posuere orci dictum eu. Sed id magna accumsan, varius sem et, ultricies felis. In congue nunc arcu, non consectetur lorem convallis eu. Sed rutrum blandit augue, vitae feugiat risus mollis ac. In ullamcorper luctus tempor.</p>
+		
+		<h2>A Second Level Heading</h2>
+		
+		<p>Mauris dignissim, arcu at fringilla sagittis, mi risus malesuada nibh, et vulputate diam risus eget est. Sed id nibh ullamcorper, sagittis nunc rutrum, accumsan ipsum. Phasellus in blandit lorem. Nunc a ligula libero. Ut commodo neque a sollicitudin vulputate. Donec ac facilisis velit. Phasellus non odio eu sem rutrum semper ut quis leo. Curabitur dignissim leo quis eros tristique consectetur. Duis elementum a est quis tristique. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque sed nunc accumsan, pretium massa vel, accumsan tellus. Morbi non massa cursus, volutpat enim a, mollis est. Nullam mattis leo eu nulla fermentum pretium sed eu ipsum. Donec convallis consectetur nulla, in condimentum erat pharetra id. Sed porta accumsan neque, sit amet imperdiet dui tempor eu. In non sapien consectetur, ultrices turpis ac, ornare sem. </p>
+		
+		<p><img src="http://placehold.it/640x300.png" alt="FPO" /></p>
+		
+		<p>Phasellus rutrum, libero nec consequat adipiscing, eros dui ornare urna, quis tincidunt neque lectus nec dui. Suspendisse porta varius turpis, eget vulputate diam pellentesque sit amet. Quisque quis neque a enim egestas ultrices. Nunc condimentum libero at bibendum dignissim. Donec pretium dolor rutrum, dapibus justo vel, malesuada orci. Suspendisse et ipsum orci. Ut malesuada turpis eleifend fermentum viverra. Maecenas in ligula non nunc sodales lacinia id rutrum lectus. In pulvinar viverra semper. Suspendisse aliquet molestie urna, et consequat libero eleifend at. Nam euismod sodales libero, vel aliquam sem tempus ac. </p>
+
+		<p>Donec tincidunt mi a ullamcorper facilisis. Praesent diam sapien, fringilla id est sit amet, condimentum consequat mi. Nullam egestas turpis sed nulla fringilla vestibulum. Quisque eu nisi blandit, porta turpis quis, rhoncus orci. Aenean cursus est ipsum, at tristique sem sagittis sed. Nullam vel dolor sit amet orci consequat scelerisque vitae nec quam. Nulla pretium, nibh a pharetra adipiscing, felis tortor tempus dolor, in venenatis nunc turpis non nibh. Nam turpis ligula, porta sed tincidunt non, convallis vitae ante. Suspendisse at tellus in nisl consectetur elementum. Nunc sem nunc, dictum id mi sit amet, bibendum dignissim ipsum. Duis ut mollis arcu. Praesent vulputate tempor nunc sit amet pellentesque. Proin eu dui hendrerit, vulputate enim sed, mattis turpis. Maecenas fermentum ut neque a luctus. Nulla facilisi. Etiam lectus leo, imperdiet at aliquam eget, pharetra quis nibh. </p>
+
+	</div>
+</body>
+</html>

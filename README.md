@@ -1,7 +1,7 @@
 scransition
 ===========
 
-A jquery plugin for triggering transitions when you scroll to an element. This plugin adds the class 'scransition' to your targeted elements. When an element appears on screen, the class is removed and any css associated with the class will be animated away with it. In this way, you can easily animate any CSS parameter which can be animated. This plugin requires CSS transition (or -webkit-transition) support in order for the animation to work. Currently, global support for CSS3 transitions is quite good. [Check CanIUse.com](caniuse.com/#search=transition) to see if your targeted browsers currently have support.
+A jquery plugin for triggering transitions when you scroll to an element. This plugin adds the class 'scransition' to your targeted elements. When an element appears on screen, the class is removed and any css associated with the class will be animated away with it. In this way, you can easily animate any CSS parameter which can be animated. This plugin requires CSS transition (or -webkit-transition) support in order for the animation to work. Currently, global support for CSS3 transitions is quite good. [Check CanIUse.com](http://caniuse.com/#search=transition) to see if your targeted browsers currently have support.
 
 ## Use
 
